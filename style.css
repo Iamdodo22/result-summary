@@ -19,6 +19,11 @@ body{
         height: auto;
     }
 }
+@media (max-width:540px) {
+    body{
+        height: auto;
+    }
+}
 .main---container{
     display: flex;
     flex-direction: row;
@@ -30,6 +35,11 @@ body{
         flex-direction: column;
         height: 100%;
         width: 100%;
+    }
+}
+@media (max-width:540px) {
+    .main---container{
+        flex-direction: column;
     }
 }
 .items{
@@ -48,6 +58,12 @@ body{
         width: 100%;
     }
 }
+@media (max-width:540px) {
+    .items{
+        flex-direction: column;
+        width: 100%;
+    }
+}
 .purple---container{
     background:linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
     border-color:hsl(252, 100%, 67%) ;
@@ -58,7 +74,15 @@ body{
 }
 @media (max-width:375px) {
     .purple---container{
-        height: 20rem;
+        height: 15rem;
+        border-radius: 0 0 25px 25px;
+        padding: 2rem 1rem;
+        font-size: 20px;
+    }
+}
+@media (max-width:540px) {
+    .purple---container{
+        height: 17rem;
         border-radius: 0 0 25px 25px;
         padding: 2rem 1rem;
         font-size: 20px;
@@ -140,7 +164,7 @@ li{
 }
 @media (max-width:375px) {
     li{
-    font-size: 20px;
+    font-size: 18px;
     }
 }
 .lnk{
@@ -151,6 +175,12 @@ li{
     border-radius: 25px;
 }
 @media (max-width:375px) {
+    .lnk{
+    padding: 1rem 8rem;
+    font-size: 24px;
+    }
+}
+@media (max-width:540px) {
     .lnk{
     padding: 1rem 8rem;
     font-size: 24px;
@@ -175,7 +205,14 @@ ul{
 }
 @media (max-width:375px) {
     ul{
-        gap: 10rem;
+        gap: 8rem;
+        padding: .8rem .1rem;
+        border-radius: 12px;
+    }
+}
+@media (max-width:540px) {
+    ul{
+        gap: 14rem;
         padding: .8rem .1rem;
         border-radius: 12px;
     }
